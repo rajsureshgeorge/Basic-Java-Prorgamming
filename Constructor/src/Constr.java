@@ -4,9 +4,9 @@ public class Constr {
 		System.out.println("Hello I am from the First Constructor");
 	}
 
-	//public static void main(String[] args) {
-//		Constr a=new Constr();
+	public static void main(String[] args) {
+	Constr a=new Constr();
 		
-//	}
+	}
 
 }
