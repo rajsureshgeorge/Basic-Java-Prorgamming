@@ -22,7 +22,7 @@ public class Layout implements ActionListener{
 		jf.setVisible(true);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		DisplayLabel=new JLabel("");
-		DisplayLabel.setFont(new Font("Calibri", Font.PLAIN, 50));
+		DisplayLabel.setFont(new Font("Calibri", Font.PLAIN, 55));
 		DisplayLabel.setBounds(50, 20,380,90 );
 		jf.add(DisplayLabel);
 		DisplayLabel.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -153,51 +153,67 @@ public class Layout implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 	if(e.getSource()==ZeroButton) {
-		DisplayLabel.setText("0");	
+		String labelText=DisplayLabel.getText();
+		DisplayLabel.setText(labelText+"0");	
 	}
 	else if (e.getSource()==OneButton) {
-		DisplayLabel.setText("1");	
+		String labelText1=DisplayLabel.getText();
+		DisplayLabel.setText(labelText1+"1");	
 	}
 	else if (e.getSource()==TwoButton) {
-		DisplayLabel.setText("2");	
+		String labelText2=DisplayLabel.getText();
+		DisplayLabel.setText(labelText2+"2");	
 	}
 	else if (e.getSource()==ThreeButton) {
-		DisplayLabel.setText("3");	
+		String labelText3=DisplayLabel.getText();
+		DisplayLabel.setText(labelText3+"3");	
 	}
 	else if (e.getSource()==FourButton) {
-		DisplayLabel.setText("4");	
+		String labelText4=DisplayLabel.getText();
+		DisplayLabel.setText(labelText4+"4");	
 	}
 	else if (e.getSource()==FiveButton) {
-		DisplayLabel.setText("5");	
+		String labelText5=DisplayLabel.getText();
+		DisplayLabel.setText(labelText5+"5");	
 	}
 	else if (e.getSource()==SixButton) {
-		DisplayLabel.setText("6");	
+		String labelText6=DisplayLabel.getText();
+		DisplayLabel.setText(labelText6+"6");	
 	}
 	else if (e.getSource()==SevenButton) {
-		DisplayLabel.setText("7");	
+		String labelText7=DisplayLabel.getText();
+		DisplayLabel.setText(labelText7+"7");	
 	}
 	else if (e.getSource()==EightButton) {
-		DisplayLabel.setText("8");	
+		String labelText8=DisplayLabel.getText();
+		DisplayLabel.setText(labelText8+"8");	
 	}
 	else if (e.getSource()==NineButton) {
-		DisplayLabel.setText("9");	
+		String labelText9=DisplayLabel.getText();
+		DisplayLabel.setText(labelText9+"9");	
 	}
 	else if (e.getSource()==DotButton) {
-		DisplayLabel.setText(".");	
+		String labelText10=DisplayLabel.getText();
+		DisplayLabel.setText(labelText10+".");	
 	}
 	else if (e.getSource()==PlusButton) {
-		DisplayLabel.setText("+");	
+		String labelText=DisplayLabel.getText();
+		DisplayLabel.setText(labelText+"+");	
 	}
 	else if (e.getSource()==MinusButton) {
-		DisplayLabel.setText("-");	
+		String labelText=DisplayLabel.getText();
+		DisplayLabel.setText(labelText+"-");	
 	}
 	else if (e.getSource()==MulButton) {
-		DisplayLabel.setText("*");	
+		String labelText=DisplayLabel.getText();
+		DisplayLabel.setText(labelText+"*");	
 	}
 	else if (e.getSource()==DivButton) {
-		DisplayLabel.setText("/");	
+		String labelText=DisplayLabel.getText();
+		DisplayLabel.setText(labelText+"/");	
 	}
 	else if (e.getSource()==EqualButton) {
+		
 		DisplayLabel.setText("=");	
 	}
 	}
